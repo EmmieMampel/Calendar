@@ -1,8 +1,8 @@
 function displayTime(){
     var datetTime = new Date();
-    var hrs = dateTime.getHours();
-    var min = dateTime.getMinutes();
-    var sec = dateTime.getSeconds();
+    var hrs = datetTime.getHours();
+    var min = datetTime.getMinutes();
+    var sec = datetTime.getSeconds();
     var session = document.getElementById('session');
 
     if(hrs >= 12){
