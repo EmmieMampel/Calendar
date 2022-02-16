@@ -164,21 +164,17 @@ table {
 	right: 6em;
 }
 
-.tbody{
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-}
+/* digital clock starts here */
 
 .digitalclock{
 	font-family: "Arial", Helvetica, sans-serif;
     padding: 30px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     position: absolute;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
-    font-size: 150px;
+    font-size: 50px;
     white-space: nowrap;
 }
