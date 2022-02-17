@@ -1,11 +1,13 @@
 <!DOCTYPE html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <html lang="en"></html>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <html lang="en">
+
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 
 </head>
 
@@ -15,37 +17,38 @@
 
     <button class="header-btn header-btn--left" title="Menu">
       <svg class="icon" width="20px" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#fff" d="M0 0h20v2H0zM0 7h20v2H0zM0 14h20v2H0z"/>
+        <path fill="#fff" d="M0 0h20v2H0zM0 7h20v2H0zM0 14h20v2H0z" />
       </svg>
-   </button>
+    </button>
 
-   <button class="header-btn header-btn--right" title="Add event">
+    <button class="header-btn header-btn--right" title="Add event">
       <svg class="icon" width="26px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path fill="#fff" d="M416 277.333H277.333V416h-42.666V277.333H96v-42.666h138.667V96h42.666v138.667H416v42.666z"/>
+        <path fill="#fff"
+          d="M416 277.333H277.333V416h-42.666V277.333H96v-42.666h138.667V96h42.666v138.667H416v42.666z" />
       </svg>
-   </button>
+    </button>
 
- </header>
+  </header>
 
-<div class="container">
+  <div class="container">
 
     <div class="calendar">
 
       <div class="digitalclock">
         <span id="hours">00</span>
-          <span>:</span>
+        <span>:</span>
         <span id="minutes">00</span>
-          <span>:</span>
+        <span>:</span>
         <span id="seconds">00</span>
-          <span id="session">AM</span>
+        <span id="session">AM</span>
       </div>
 
-        <h2 class="calendar-container-title">February 2022</h2>
-  
+      <h2 class="calendar-container-title">February 2022</h2>
+
       <table>
-  
+
         <thead>
-  
+
           <tr>
             <td>M</td>
             <td>T</td>
@@ -56,7 +59,7 @@
             <td>Su</td>
           </tr>
         </thead>
-  
+
         <tbody>
           <tr>
             <td class="prev-month">31</td>
@@ -94,7 +97,7 @@
             <td>26</td>
             <td>27</td>
           </tr>
-  
+
           <tr>
             <td>28</td>
             <td class="next-month">1</td>
@@ -113,51 +116,53 @@
             <td class="next-month">12</td>
             <td class="next-month">13</td>
           </tr>
-  
+
         </tbody>
-  
+
       </table>
-  
+
     </div> <!-- calendar ends here -->
-  
+
   </div> <!-- container ends here -->
 
   <!-- Next event beguns here -->
 
-<div class="events-container">
-  
-  <span class="events-title">Upcoming events this month</span>
-    
-  <ul class="events-list">
-    <li class="events-item">
-      <div class="events-item--left">
-        <span class="events-name">Group project</span>
-        <span class="events-date">Feb 11</span>
-      </div>
-      <span class="events-tag">8AM</span>
-    </li>
-    <li class="events-item">
-      <div class="events-item--left">
-        <span class="events-name">Group project</span>
-        <span class="events-date">Feb 16</span>
-      </div>
-      <span class="events-tag">8AM</span>
-    </li>
-    <li class="events-item">
-      <div class="events-item--left">
-        <span class="events-name">Doctor's appointment</span>
-        <span class="events-date">Feb 17</span>
-      </div>
-      <span class="events-tag">2PM</span>
-    </li>
-    <li class="events-item">
-      <div class="events-item--left">
-        <span class="events-name">Javascript certificate</span>
-        <span class="events-date">Feb 21</span>
-      </div>
-      <span class="events-tag--highlighted">All day</span>
-    </li>
-  </ul>
-</div> <!-- Event ends here -->
+  <div class="events-container">
+
+    <span class="events-title">Upcoming events this month</span>
+
+    <ul class="events-list">
+      <li class="events-item">
+        <div class="events-item--left">
+          <span class="events-name">Group project</span>
+          <span class="events-date">Feb 11</span>
+        </div>
+        <span class="events-tag">8AM</span>
+      </li>
+      <li class="events-item">
+        <div class="events-item--left">
+          <span class="events-name">Group project</span>
+          <span class="events-date">Feb 16</span>
+        </div>
+        <span class="events-tag">8AM</span>
+      </li>
+      <li class="events-item">
+        <div class="events-item--left">
+          <span class="events-name">Doctor's appointment</span>
+          <span class="events-date">Feb 17</span>
+        </div>
+        <span class="events-tag">2PM</span>
+      </li>
+      <li class="events-item">
+        <div class="events-item--left">
+          <span class="events-name">Javascript certificate</span>
+          <span class="events-date">Feb 21</span>
+        </div>
+        <span class="events-tag--highlighted">All day</span>
+      </li>
+    </ul>
+  </div> <!-- Event ends here -->
+  </div>
 </body>
+
 </html>
