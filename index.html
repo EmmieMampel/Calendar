@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <html lang="en"></html>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
@@ -11,22 +12,35 @@
 <body>
 
   <header>
+
     <button class="header-btn header-btn--left" title="Menu">
       <svg class="icon" width="20px" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill="#fff" d="M0 0h20v2H0zM0 7h20v2H0zM0 14h20v2H0z"/>
       </svg>
    </button>
+
    <button class="header-btn header-btn--right" title="Add event">
       <svg class="icon" width="26px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
         <path fill="#fff" d="M416 277.333H277.333V416h-42.666V277.333H96v-42.666h138.667V96h42.666v138.667H416v42.666z"/>
       </svg>
    </button>
+
  </header>
 
 <div class="container">
 
     <div class="calendar">
-      <h2 class="container-title">February 2022</h2>
+
+      <div class="digitalclock">
+        <span id="hours">00</span>
+          <span>:</span>
+        <span id="minutes">00</span>
+          <span>:</span>
+        <span id="seconds">00</span>
+          <span id="session">AM</span>
+      </div>
+
+        <h2 class="calendar-container-title">February 2022</h2>
   
       <table>
   
@@ -72,7 +86,7 @@
             <td>20</td>
           </tr>
           <tr>
-            <td class="event">21</td>
+            <td class="event-day">21</td>
             <td>22</td>
             <td>23</td>
             <td>24</td>
@@ -111,15 +125,9 @@
   <!-- Next event beguns here -->
 
 <div class="events-container">
+  
   <span class="events-title">Upcoming events this month</span>
-    <div class="digitalclock">
-      <span id="hours">00</span>
-      <span>:</span>
-      <span id="minutes">00</span>
-      <span>:</span>
-      <span id="seconds">00</span>
-      <span id="session">AM</span>
-    </div>
+    
   <ul class="events-list">
     <li class="events-item">
       <div class="events-item--left">
@@ -147,8 +155,9 @@
         <span class="events-name">Javascript certificate</span>
         <span class="events-date">Feb 21</span>
       </div>
-      <span class="events-tag">2PM</span>
+      <span class="events-tag">All day</span>
     </li>
   </ul>
 </div> <!-- Event ends here -->
 </body>
+</html>
