@@ -8,6 +8,8 @@
 
 </head>
 
+<body>
+
       <div class="digitalclock">
         <span id="hours">00</span>
         <span>:</span>
@@ -18,25 +20,23 @@
         
       </div>
 
-  <div class="container">
+<div class="container">
 
     <div class="calendar">
   
-      <header>
-        <h2>February</h2>
-  
-        <button class="header__btn header__btn--left" title="Menu">
-          <svg class="icon" width="20px" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#fff" d="M0 0h20v2H0zM0 7h20v2H0zM0 14h20v2H0z"/>
-          </svg>
-        </button>
-        <button class="header__btn header__btn--right" title="Add event">
-          <svg class="icon" width="26px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path fill="#fff" d="M416 277.333H277.333V416h-42.666V277.333H96v-42.666h138.667V96h42.666v138.667H416v42.666z"/>
-          </svg>
-        </button>
-  
-      </header>
+       <header>
+          <button class="header-btn header-btn--left" title="Menu">
+            <svg class="icon" width="20px" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#fff" d="M0 0h20v2H0zM0 7h20v2H0zM0 14h20v2H0z"/>
+            </svg>
+         </button>
+         <button class="header-btn header-btn--right" title="Add event">
+            <svg class="icon" width="26px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="#fff" d="M416 277.333H277.333V416h-42.666V277.333H96v-42.666h138.667V96h42.666v138.667H416v42.666z"/>
+            </svg>
+         </button>
+         <h2 class="container-title">February 2022</h2>
+       </header>
   
       <table>
   
@@ -118,37 +118,39 @@
   
   </div> <!-- container ends here -->
 
-</div> <!-- digital clock ends here -->
+  <!-- Next event beguns here -->
 
 <div class="events-container">
-  <span class="events__title">Upcoming events this month</span>
-  <ul class="events__list">
-    <li class="events__item">
-      <div class="events__item--left">
-        <span class="events__name">Group project</span>
-        <span class="events__date">Feb 11</span>
+  <span class="events-title">Upcoming events this month</span>
+  <ul class="events-list">
+    <li class="events-item">
+      <div class="events--item--left">
+        <span class="events-name">Group project</span>
+        <span class="events-date">Feb 11</span>
       </div>
-      <span class="events__tag">8:00</span>
+      <span class="events-tag">8AM</span>
     </li>
-    <li class="events__item">
-      <div class="events__item--left">
-        <span class="events__name">Group project</span>
-        <span class="events__date">Feb 16</span>
+    <li class="events-item">
+      <div class="events-item--left">
+        <span class="events-name">Group project</span>
+        <span class="events-date">Feb 16</span>
       </div>
-      <span class="events__tag">8:30</span>
+      <span class="events-tag">8AM</span>
     </li>
-    <li class="events__item">
-      <div class="events__item--left">
-        <span class="events__name">Doctor's appointment</span>
-        <span class="events__date">Feb 17</span>
+    <li class="events-item">
+      <div class="events-item--left">
+        <span class="events-name">Doctor's appointment</span>
+        <span class="events-date">Feb 17</span>
       </div>
-      <span class="events__tag">2PM</span>
+      <span class="events-tag">2PM</span>
     </li>
-    <li class="events__item">
-      <div class="events__item--left">
-        <span class="events__name">Javascript certificate</span>
-        <span class="events__date">Feb 21</span>
+    <li class="events-item">
+      <div class="events-item--left">
+        <span class="events-name">Javascript certificate</span>
+        <span class="events-date">Feb 21</span>
       </div>
+      <span class="events-tag">2PM</span>
     </li>
   </ul>
-</div>
+</div> <!-- Event ends here -->
+</body>
