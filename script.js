@@ -1,3 +1,11 @@
+let person = prompt("Are you ready to take responsibility for your life?", "Yes");
+let text;
+if (person == null || person == "") {
+  text = "User cancelled the prompt.";
+} else {
+  text = "I hope you're ready" + person
+}
+
 function displayTime(){
     var datetTime = new Date();
     var hrs = datetTime.getHours();
