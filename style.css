@@ -1,3 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	background: #f9f9f9;
     color: #0e171c;
@@ -13,10 +19,22 @@ body {
 }
 
 a {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 	text-decoration: none;
 }
 
-h2 {
+.header{
+	background-color: #fff;
+    display: flex;
+    height: 58px;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+
+container-title {
 	font-size: 2em;
 	line-height: 1.25em;
 	margin: .25em 0;
@@ -38,13 +56,12 @@ table {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0,5);
-    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* ---------- Here starts the calendar ---------- */
+/* ---------- Calendar starts here ---------- */
 
 .calendar {
 	text-align: center;
@@ -92,8 +109,11 @@ table {
 }
 
 .current-day {
-	background: #2e8d70d7;
+	background-color: #2e8d70d7;
+	border-color: #FEFEFE;
 	color: #f9f9f9;
+	cursor: pointer;
+	box-shadow: 0 2px 2px rgb(0 0 0 / 10%)
 }
 
 .event {
@@ -118,55 +138,41 @@ table {
 	background: #f9f9f9;
 }
 
-/* ---------- I can never get my buttons right, I'm so mad ---------- */
-.btn-prev{
-    border: 2px solid #cbd1d2;
-	border-radius: 50%;
-	color: #cbd1d2;
-	height: 2em;
-	font-size: .75em;
-	line-height: 2em;
-	margin: -1em;
-	position: absolute;
-	top: 50%;
-	width: 2em;
+/* ---------- Buttons start here ---------- */
+.header-btn{
+	background-color: #2e8d70d7;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    height: 80px;
+    padding-top: 18px;
+    position: absolute;
+    top: -25px;
+    width: 80px;
 }
 
-
-.btn-next {
-	border: 2px solid #2e8d70d7;
-	border-radius: 50%;
-	color: #2e8d70d7;
-	height: 2em;
-	font-size: .75em;
-	line-height: 2em;
-	margin: -1em;
-	position: absolute;
-	top: 50%;
-	width: 2em;
+.header-btn--right{
+	padding-right: 32px;
+    right: -25px;
+    text-align: right;
 }
 
-.btn-prev:hover{
-    background: #cbd1d2;
-	color: #f9f9f9;
+.header-btn--left{
+	left: -25px;
+    padding-left: 38px;
+    text-align: left;
 }
 
-.btn-next:hover {
-	background: #2e8d70d7;
-	color: #2e8d70d7;
+.icon{
+	display: inline-block;
 }
 
-.btn-prev {
-	left: 6em;
-}
-
-.btn-next {
-	right: 6em;
-}
 
 /* digital clock starts here */
 
 .digitalclock{
+	display: table-header-top;
 	font-family: "Arial", Helvetica, sans-serif;
     padding: 30px;
     color: rgb(0, 0, 0);
@@ -177,4 +183,74 @@ table {
     transform: translate(50%, -50%);
     font-size: 50px;
     white-space: nowrap;
+}
+
+/* Event nr 1 */
+
+.events-container{
+	box-sizing: border-box;
+	padding: 0 15px;
+	background-color: #e6e6e6;
+}
+
+.events-title{
+	color: #BEC1CA;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.events-list{
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.events-item--left {
+    width: calc(100% - 76px);
+}
+
+.events-item {
+    background: #fff;
+    border-left: 8px solid #2e8d70d7;
+    border-radius: 2px;
+    box-shadow: 0px 6px 12px rgb(0 0 0 / 5%);
+    padding: 15px 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.events-tag{
+	background: #2e8d70d7;
+    border: 2px solid #FEFEFE;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 10%);
+    border-radius: 20px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    width: 60px;
+    margin-left: 16px;
+    padding: 5px 2px;
+    text-align: center;
+}
+
+.events-name{
+	font-size: 12px;
+    font-weight: 700;
+    color: #222741;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.events-date{
+	font-size: 12px;
+    color: #9FAAB7;
+    display: inline-block;
 }
