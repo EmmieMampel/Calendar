@@ -5,8 +5,7 @@
 }
 
 body {
-	font-family: "Montserrat", sans-serif;
-	background: #f9f9f9;
+	background: #ffffff;
     color: #0e171c;
     display: grid;
     font: 300 100%/1.5em 'Lato', sans-serif;
@@ -79,6 +78,8 @@ table {
 .calendar thead {
 	font-weight: 600;
 	text-transform: uppercase;
+	border-bottom: 2px solid #F2F6F8;
+    margin-bottom: 10px;
 }
 
 .calendar tbody {
@@ -99,8 +100,8 @@ table {
 	width: 4em;
 }
 
-.calendar-table--header {
-    border-bottom: 2px solid #F2F6F8;
+.calendar-table {
+    border-bottom: 2px solid #cfcfcf;
     margin-bottom: 4px;
 }
 
@@ -115,7 +116,7 @@ table {
 }
 
 .current-day {
-	background-color: #2e8d70d7;
+	background-color: #86d8c9de;
     border: 2px solid #fff;
     box-shadow: 0 2px 2px rgb(0 0 0 / 10%);
 	border-radius: 50%;
@@ -142,11 +143,12 @@ table {
 }
 
 .event-day{
-	background-color: #86D8C9;
+	background-color: #8ecfaf;
     border: 2px solid white;
     border-radius: 50%;
     box-shadow: 0 2px 2px rgba(0, 0, 0 / 10%);
 	color: white;
+	cursor: pointer;
 }
 
 .event.current-day:after {
@@ -189,21 +191,21 @@ table {
 	display: inline-block;
 }
 
-/* digital clock starts here */
+/* ---------- Digital clock ---------- */
 
 .digitalclock{
 	font-family: "Arial", Helvetica, sans-serif;
     color: #272727;
     font-weight: bold;
     font-size: 15px;
-	border-bottom: 2px solid #F2F6F8;
-    margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 /* ---------- Second Event ---------- */
 
 .events-container{
 	box-sizing: border-box;
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
 	padding: 0 15px;
 	background-color: #e6e6e6;
     border: 1px solid rgba(255, 255, 255, 0,5);
@@ -245,6 +247,21 @@ table {
 
 .events-tag{
 	background: #2e8d70d7;
+    border: 2px solid #FEFEFE;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 10%);
+    border-radius: 20px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    width: 60px;
+    margin-left: 16px;
+    padding: 5px 2px;
+    text-align: center;
+	cursor: pointer;
+}
+
+.events-tag--highlighted {
+	background: #8ecfaf;
     border: 2px solid #FEFEFE;
     box-shadow: 0px 2px 2px rgb(0 0 0 / 10%);
     border-radius: 20px;
